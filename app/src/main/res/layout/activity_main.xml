@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblue"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/zikirmatikButton"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/custom_button"
+        android:onClick="zikirmatik"
+        android:text="Zikirmatik"
+        app:layout_constraintBottom_toTopOf="@+id/esmaulhusnaButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/duaEzberButton"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/custom_button"
+        android:onClick="duaSureAsr"
+        android:text="Dualar, Sureler, Aşrlar"
+        app:layout_constraintBottom_toTopOf="@+id/cevsenButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esmaulhusnaButton" />
+
+    <Button
+        android:id="@+id/tesbihatButton"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="97dp"
+        android:background="@drawable/custom_button"
+        android:onClick="tesbihatlar"
+        android:text="Namaz Tesbihatları"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cevsenButton" />
+
+    <Button
+        android:id="@+id/cevsenButton"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/custom_button"
+        android:onClick="cevsenClick"
+        android:text="Cevşen"
+        app:layout_constraintBottom_toTopOf="@+id/tesbihatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duaEzberButton" />
+
+    <Button
+        android:id="@+id/esmaulhusnaButton"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/custom_button"
+        android:onClick="esmButton"
+        android:text="Esmaül Hüsna"
+        app:layout_constraintBottom_toTopOf="@+id/duaEzberButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zikirmatikButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

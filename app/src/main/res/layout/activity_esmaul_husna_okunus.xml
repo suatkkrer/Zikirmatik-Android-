@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblue"
+    tools:context=".esmaulHusnaOkunus">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="358dp"
+        android:layout_height="428dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="72dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/zikir" />
+
+    <TextView
+        android:id="@+id/esmTextView"
+        android:layout_width="237dp"
+        android:layout_height="81dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="@font/digital"
+        android:inputType="number"
+        android:text="594"
+        android:textAlignment="textEnd"
+        android:textSize="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/buttonEsm"
+        android:layout_width="121dp"
+        android:layout_height="122dp"
+        android:background="@drawable/circlebutton"
+        android:onClick="value"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/esmTextView"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <Button
+        android:id="@+id/buttonRes"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/circleresetbutton"
+        android:onClick="reset"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toEndOf="@+id/esmTextView"
+        app:layout_constraintTop_toBottomOf="@+id/esmTextView"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <TextView
+        android:id="@+id/tesbihText"
+        android:layout_width="366dp"
+        android:layout_height="82dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

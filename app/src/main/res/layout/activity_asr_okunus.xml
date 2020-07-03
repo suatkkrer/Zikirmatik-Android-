@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgroundblue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AsrOkunus">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:id="@+id/asrOkunusTextAr"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="30sp"-->
+<!--            android:text="TextView" />-->
+
+        <ImageView
+            android:id="@+id/asrOkunusView"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cv" />
+
+        <TextView
+            android:id="@+id/asrOkunusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="40dp"
+            android:text="TextView" />
+    </LinearLayout>
+
+</ScrollView>
